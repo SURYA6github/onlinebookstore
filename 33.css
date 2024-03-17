@@ -1,0 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    border: 1px solid black;
+    height:500px;
+    width:1000px;
+    background-color: rgba(185, 246, 246, 0.641);
+    padding: 10px;
+}

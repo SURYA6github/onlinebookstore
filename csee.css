@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.main{
+    height:500px;
+    width:1000px;
+    background-color: aqua;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

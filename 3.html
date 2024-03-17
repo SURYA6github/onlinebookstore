@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="33.css">
+</head>
+<body>
+    <div class="main">
+        <h1 style="color: blue; text-align: center;">Registration Form</h1>
+        <form action="#">
+            
+            <label for="fn">First Name(Minimum 6 characters)<span style="color: red;">*</span></label>
+            <input type="text" id="fn" required>
+            <br><br>
+            <label for="ln">Last Name<span style="color: red;">*</span></label>
+            <input type="text" id="ln" required>
+            <br><br>
+            <label for="email">EmailAddress<span style="color: red;">*</span></label>
+            <input type="mail" id="email" required>
+            <br>
+            <span style="color: red;">(one e-mail id only):</span>
+            <span style="color: rgb(0, 187, 187);">e.g smith@hotmail.com</span>
+            <br><br>
+            <label for="pass">Password(minimum 6 characters)<span style="color: red;">*</span></label>
+            <input type="password" id="pass" required>
+            <br><br>
+            <label for="add">Address<span style="color: red;">*</span></label>
+            <input type="text" id="add" required>
+            <br><br>
+            <label for="Mob">Mobile No<span style="color: red;">*</span></label>
+            <input type="text" id="Mob" required>
+            <br><br>
+            <div>
+                <label>Gender:</label>
+
+                <input type="radio" id="male" name="gender" value="male"checked>
+                <label for="male">male</label>
+
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">female</label>
+            </div>
+            <br>
+            <div class="buttons">
+                <button>Submit</button>
+                <button>Reset</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

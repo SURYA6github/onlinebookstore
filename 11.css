@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.head{
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(245, 245, 245, 0);
+    display: flex;
+    justify-content: space-evenly;
+    z-index: 1100;
+}
+
+.sidebar{
+    position:fixed;
+    left:-300px; 
+    height: 100%;
+    width: 300px;
+    background-color: rgb(240, 244, 242);
+    box-shadow: 0 0 6px rgba(238, 235, 235, 0.688);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.sidebar .btn_two i{
+    color: grey;
+    font-size:25px;
+    line-height:60px;
+    position:absolute;
+    left:275px;
+    cursor:pointer;
+}
+.content{
+    height: 100%;
+    position: absolute;
+    margin-top: 110px;
+    width: 100%;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+a{
+    padding-top: 50px;
+}
+
+img{
+    padding-top: 5px;
+    width: 350px;
+    height: 350px;
+}
+
+.text1{
+    padding-top: 10px;
+    color: blue;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    font-weight: 600;
+}
+.text2{
+    padding-top: 20px;
+    color: red;
+    font-family: 'Dancing Script';
+    font-size: 30px;
+    font-weight: 600;
+}
+
+#check{
+    display:none;
+}
+
+.btn_one{
+    color:white;
+    font-size: 30px;
+    font-weight: 700;
+    position:absolute;
+    top: 20px;
+    left:20px;
+    line-height: 60px;
+    cursor:pointer;
+}
+
+.sidebar a:hover{
+    box-shadow: 0 0 4px rgb(129, 245, 189);
+}
+#check:checked ~ .sidebar{
+    left:0;
+}
+
+.sidebar a{
+    padding-left: 20px;
+}
+.head a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.head a:hover {
+    color: green;
+    
+}
